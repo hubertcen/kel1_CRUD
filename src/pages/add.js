@@ -43,7 +43,7 @@ function Add() {
                 class="bg-white p-3 w-full outline-none rounded-lg text-slate-700"
                 name="price"
                 id="price"
-                onChange={(e) => setProductPrice(e.target.value)}
+                onChange={(e) => setProductPrice(Number(e.target.value))}
               />
             </label>
             <button
