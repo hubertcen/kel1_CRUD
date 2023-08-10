@@ -6,7 +6,7 @@ function Navbar() {
     <div className="bg-slate-600 text-white pb-6">
       <nav class="bg-slate-700 text-white fixed top-0 left-0 w-full z-50">
         <div class="mx-auto max-w-6xl py-6 flex justify-between items-center">
-          <a href="/products1">
+          <a href="/products">
             <h1 class="font-bold text-2xl text-emerald-500">TokoLaku</h1>
           </a>
           <div class="flex justify-start items-center space-x-3">
