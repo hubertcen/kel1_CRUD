@@ -70,7 +70,7 @@ function Products() {
                                 </figure>
                                 <div className='py-2'>
                                     <h3 className='text-lg'>{product.title}</h3>
-                                    <h4 className='text-sm'>Rp. 549</h4>
+                                    <h4 className='text-sm'>Rp {product.price}</h4>
                                 </div>
                                 <div className='flex space-x-3 justify-between align-items-center'>
                                     <button
@@ -114,21 +114,21 @@ function Products() {
                             </button>
                             <div className='p-6 text-center'>
                                 <h3 className='mb-5 text-lg font-normal text-gray-500'>
-                                    Are you sure you want to remove this product?
+                                    Are you sure you want to delete {products[selectedProductIndex].title}?
                                 </h3>
                                 <button
                                     onClick={handleConfirmRemove}
                                     type='button'
                                     className='text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2'
                                 >
-                                    Yes, I'm sure
+                                    Ok
                                 </button>
                                 <button
                                     onClick={() => setShowRemoveModal(false)}
                                     type='button'
                                     className='text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10'
                                 >
-                                    No, cancel
+                                    Cancel
                                 </button>
                             </div>
                         </div>
