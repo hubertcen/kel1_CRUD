@@ -70,7 +70,7 @@ function Products() {
                                 </figure>
                                 <div className='py-2'>
                                     <h3 className='text-lg'>{product.title}</h3>
-                                    <h4 className='text-sm'>Rp {product.price}</h4>
+                                    <h4 className='text-sm'>Rp. {product.price}</h4>
                                 </div>
                                 <div className='flex space-x-3 justify-between align-items-center'>
                                     <button
@@ -81,7 +81,7 @@ function Products() {
                                         Remove
                                     </button>
                                     <a
-                                        href='/edit'
+                                        href={`products/${product.id}`}
                                         type='button'
                                         className='border text-center border-emerald-600 bg-white text-emerald-600 block w-full px-5 py-2 hover:bg-emerald-600 hover:text-white rounded-lg text-sm'
                                     >
